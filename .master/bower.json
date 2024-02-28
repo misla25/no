@@ -1,0 +1,23 @@
+{
+  "name": "gamz",
+  "main": "index.js",
+  "authors": [
+    "John Fraboni <johnfraboni@hotmail.com>"
+  ],
+  "description": "A JavaScript gaming library",
+  "keywords": [
+    "Fun"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
+}
