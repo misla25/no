@@ -63,6 +63,11 @@
        * 
        * @param {number} pointA : point with properties x and y
        * @param {number} pointB : another point with properties x and y
+      // * @param {number} pointA.x ???
+      //  * @param {number} pointB.x 
+      //  * @param {number} pointA.y
+       // * @param {number} pointB.y
+      
        * @returns {number} distance - the distance b/w pointA and pointB
        */
       calculateDistance: function(pointA, pointB){
