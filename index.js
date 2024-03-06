@@ -59,6 +59,18 @@
           }
         };
       },
+      /**
+       * 
+       * @param {number} pointA : point with properties x and y
+       * @param {number} pointB : another point with properties x and y
+       * @returns {number} distance - the distance b/w pointA and pointB
+       */
+      calculateDistance: function(pointA, pointB){
+        const distanceX = pointB.x - pointA.x;
+        const distanceY = pointB.y - pointA.y;
+        const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+        return distance;
+      },
 
       /**
        * Using the Pythagorean Theorem, returns the distance in pixels between 
