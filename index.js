@@ -63,10 +63,10 @@
        * 
        * @param {number} pointA : point with properties x and y
        * @param {number} pointB : another point with properties x and y
-      // * @param {number} pointA.x ???
-      //  * @param {number} pointB.x 
-      //  * @param {number} pointA.y
-       // * @param {number} pointB.y
+      * @param {number} pointA.x 
+       * @param {number} pointB.x 
+       * @param {number} pointA.y
+        * @param {number} pointB.y
       
        * @returns {number} distance - the distance b/w pointA and pointB
        */
@@ -76,7 +76,7 @@
         const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
         return distance;
       },
-
+//test v.1.2.1
       /**
        * Using the Pythagorean Theorem, returns the distance in pixels between 
        * two points.
