@@ -1,6 +1,37 @@
 (function(window, _) {
   window.no = window.no || {
-    numz: {},
+    numz: {
+      /**
+       * 
+       * @param {number} pointA - point with properties x and y
+       * @param {number} pointB - another point with properties x and y 
+       * @returns degrees of the angle b/w A and B, calclating the distance between point A & B to get it
+       */
+       getAngleDegrees(pointA,pointB){
+        const distanceX = pointB.x - pointA.x;
+        const distanceY = pointB.y - pointA.y;
+        const radians = Math.atan2(distanceY, distanceX);
+        const degrees = radians * 180 / Math.PI;
+        return degrees;
+      },
+      /**
+       * 
+       * @param {number} degrees - common way to measure angles of a circle 
+       * @returns radians (converts degrees to radians) - another way to measure angles of a circle
+       */
+      degreesToRadians(degrees){
+        return degrees * Math.PI /180;
+      },
+      /**
+       * 
+       * @param {number} radians - another way to measure an angle of a circle
+       * @returns degrees - converts radians passed in param to equal degrees of a circle
+       */
+      radiansToDegrees(radians){
+        return radians * 180 / Math.PI;
+      },
+
+    },
     phyz: {
       /**
        * Returns an Object with basic properties utilized in a 
